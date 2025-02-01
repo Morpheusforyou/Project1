@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outhouse Cafe - Feedback</title>
+    <style>
+        /* Prevent horizontal scrolling */
+        body {
+            background-color: rgb(18, 78, 77);
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .title {
+            text-align: center;
+            background-color: rgb(18, 78, 77);
+            padding: 10px 0; 
+            margin: 0; 
+            width: 100vw;
+        }
+        
+        .top-logo { 
+            padding: 5px; 
+            height: 30vh; 
+            max-width: 100%; 
+            object-fit: contain; 
+        }
+
+        .navbar {
+            display: flex;
+            text-align: center;
+            padding: 10px 10px;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .navbar a {
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(29, 90, 75);
+            border-radius: 20px;
+        }
+
+        /* Feedback Form Styling */
+        .feedback-container {
+            background-color: rgb(207, 207, 207);
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin: 50px auto;
+        }
+
+        .feedback-container h2 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 0px solid rgb(18, 78, 77);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        /* Rating Scale for Service, Food, and Ambience */
+        .rating-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .rating-group label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .rating-group input {
+            margin-right: 5px;
+        }
+
+        /* Submit Button */
+        .btn-submit {
+            background-color: rgb(18, 78, 77);
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-submit:hover {
+            background-color: rgb(29, 90, 75);
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(18, 78, 77);
+            padding: 20px 0;
+            color: white;
+        }
+
+        .copyright {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <img src="./12130774d53c4e5090f0bb9afd2a5552-free.png" class="top-logo"><hr>
+    </div>
+    <div class="navbar">
+        <a href="http://127.0.0.1:3000/FInal project/Homepage.html">Home</a>
+        <a href="http://127.0.0.1:3000/FInal%20project/Menu.html">Menu</a>
+        <a href="http://127.0.0.1:3000/FInal project/booking.html">Booking</a>
+        <a href="http://127.0.0.1:3000/FInal project/About Us.html">About Us</a>
+        <a href="http://127.0.0.1:3000/FInal project/Feedback.html">Feedback</a>
+    </div><hr>
+
+    <!-- Feedback Form -->
+    <div class="feedback-container">
+        <h2>We Value Your Feedback</h2>
+        <form action="#" method="POST">
+            <!-- Service Rating -->
+            <div class="form-group">
+                <label for="service">How would you rate the service?</label>
+                <div class="rating-group">
+                    <input type="radio" id="service1" name="service" value="1" required>
+                    <label for="service1"></label>
+                    <input type="radio" id="service2" name="service" value="2">
+                    <label for="service2"></label>
+                    <input type="radio" id="service3" name="service" value="3">
+                    <label for="service3"></label>
+                    <input type="radio" id="service4" name="service" value="4">
+                    <label for="service4"></label>
+                    <input type="radio" id="service5" name="service" value="5">
+                    <label for="service5"></label>
+                </div>
+            </div>
+
+            <!-- Food Rating -->
+            <div class="form-group">
+                <label for="food">How would you rate the food quality?</label>
+                <div class="rating-group">
+                    <input type="radio" id="food1" name="food" value="1" required>
+                    <label for="food1"></label>
+                    <input type="radio" id="food2" name="food" value="2">
+                    <label for="food2"></label>
+                    <input type="radio" id="food3" name="food" value="3">
+                    <label for="food3"></label>
+                    <input type="radio" id="food4" name="food" value="4">
+                    <label for="food4"></label>
+                    <input type="radio" id="food5" name="food" value="5">
+                    <label for="food5"></label>
+                </div>
+            </div>
+
+            <!-- Ambience Rating -->
+            <div class="form-group">
+                <label for="ambience">How would you rate the ambience?</label>
+                <div class="rating-group">
+                    <input type="radio" id="ambience1" name="ambience" value="1" required>
+                    <label for="ambience1"></label>
+                    <input type="radio" id="ambience2" name="ambience" value="2">
+                    <label for="ambience2"></label>
+                    <input type="radio" id="ambience3" name="ambience" value="3">
+                    <label for="ambience3"></label>
+                    <input type="radio" id="ambience4" name="ambience" value="4">
+                    <label for="ambience4"></label>
+                    <input type="radio" id="ambience5" name="ambience" value="5">
+                    <label for="ambience5"></label>
+                </div>
+            </div>
+
+            <!-- Overall Experience -->
+            <div class="form-group">
+                <label for="overall">How would you rate your overall experience?</label>
+                <div class="rating-group">
+                    <input type="radio" id="overall1" name="overall" value="1" required>
+                    <label for="overall1"></label>
+                    <input type="radio" id="overall2" name="overall" value="2">
+                    <label for="overall2"></label>
+                    <input type="radio" id="overall3" name="overall" value="3">
+                    <label for="overall3"></label>
+                    <input type="radio" id="overall4" name="overall" value="4">
+                    <label for="overall4"></label>
+                    <input type="radio" id="overall5" name="overall" value="5">
+                    <label for="overall5"></label>
+                </div>
+            </div>
+
+            <!-- Additional Comments -->
+            <div class="form-group">
+                <label for="comments">Any additional comments or suggestions?</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback here"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; 2025 Outhouse Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

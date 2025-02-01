@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outhouse cafe</title>
+    <style>
+        /* Prevent horizontal scrolling */
+        body {
+            background-color: rgb(18, 78, 77);
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .title {
+            text-align: center;
+            background-color: rgb(18, 78, 77);
+            padding: 10px 0; 
+            margin: 0; 
+            width: 100vw; /* Ensures it spans the whole width */
+        }
+
+        .top-logo { 
+            padding: 5px; 
+            height: 30vh; /* Adjust the height of the logo */
+            max-width: 100%; /* Ensure the logo is responsive */
+            object-fit: contain; /* Ensure the logo keeps its aspect ratio */
+        }
+
+        .navbar {
+            display: flex;
+            text-align: center;
+            padding: 10px 10px;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .navbar a {
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(29, 90, 75);
+            border-radius: 20px;
+        }
+
+        /* Section for Pasta Details */
+        .pasta-details {
+            display: flex;
+            justify-content: space-between;
+            margin: 60px;
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-top: 20px;
+        }
+
+        .pasta-image {
+            width: 400px;
+            height: 700px;
+        }
+
+        .pasta-image img {
+            width: 100%; /* Image fills the container */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .pasta-info {
+            width: 50%;
+        }
+
+        .macros {
+            background-color: rgb(207, 207, 207);
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(18, 78, 77);
+            padding: 20px 0;
+            color: white;
+        }
+
+        .copyright {
+            margin: 0;
+            font-size: 14px;
+        }
+        .maintext{
+            font-size: 20px;
+            text-align: center;
+        }
+        .subtext{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <img src="./12130774d53c4e5090f0bb9afd2a5552-free.png" class="top-logo"><hr>
+    </div>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="">Menu</a>
+        <a href="">Booking</a>
+        <a href="">About Us</a>
+        <a href="">Feedback</a>
+    </div><hr>
+    <div class="maintext"><h2>Stuff bread</h2></div>
+    <!-- Pasta Details Section -->
+    <div class="pasta-details">
+        <!-- Pasta Image Section (Left Side) -->
+        <div class="pasta-image">
+            <img src="./fresh-homemade-pumpkin-bread-pumpkin-slices-olives.jpg" alt="Italian Pasta">
+        </div>
+
+        <!-- Pasta Info Section (Right Side) -->
+        <div class="pasta-info">
+            <!-- Macros Section -->
+            <div class="macros">
+                <p>Calories: 400 kcal</p>
+                <p>Fat: 18g</p>
+                <p>Protein: 12g</p>
+                <p>Carbs: 50g</p>
+            </div>
+            <p class="subtext">This savory stuffed bread is filled with a delicious pumpkin mix, featuring a combination of mashed pumpkin, spices, and a touch of sweetness. The bread is soft and fluffy, while the stuffing provides a unique burst of flavors. Perfect for a light yet filling meal!</p>
+            <p class="subtext">The combination of pumpkin, aromatic spices, and fresh herbs makes this dish a healthy and tasty option for anyone looking for comfort food with a twist.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">&copy; 2025 Outhouse Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

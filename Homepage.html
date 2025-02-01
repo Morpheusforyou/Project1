@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outhouse cafe</title>
+    <style>
+        /* Prevent horizontal scrolling */
+        body {
+            background-color: rgb(18, 78, 77);
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .title {
+            text-align: center;
+            background-color: rgb(18, 78, 77);
+            padding: 10px 0; 
+            margin: 0; 
+            width: 100vw; /* Ensures it spans the whole width */
+        }
+        
+        .top-logo { 
+            padding: 5px; 
+            height: 30vh; /* Adjust the height of the logo */
+            max-width: 100%; /* Ensure the logo is responsive */
+            object-fit: contain; /* Ensure the logo keeps its aspect ratio */
+        }
+
+        .navbar {
+            display: flex;
+            text-align: center;
+            padding: 10px 10px;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .navbar a {
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(29, 90, 75);
+            border-radius: 20px;
+        }
+
+        .slogan {
+            text-align: center;
+            margin: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+        .combo-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            gap: 20px; /* Space between combo items */
+            flex-wrap: wrap; /* Allows the items to wrap if the screen is smaller */
+            width: 98%; /* Ensure it doesn’t exceed the viewport width */
+            box-sizing: border-box; /* Ensures elements fit inside the width */
+        }
+
+        .combo-item {
+            background-color: rgb(207, 207, 207);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 20%; /* Adjusted width to fit 5 items in a row */
+            transition: transform 0.3s ease;
+            box-sizing: border-box;
+            max-width: 350px; /* Prevents item from growing too large */
+            color: black;
+        }
+
+        .combo-item:hover {
+            transform: scale(1.05);
+        }
+
+        .combo-item a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .combo-item p {
+            margin-top: 10px;
+        }
+
+        .combo-item img {
+            width: 100%; /* Make the images responsive */
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px; /* Space between text and image */
+        }
+        .copyright{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <img src="./12130774d53c4e5090f0bb9afd2a5552-free.png" class="top-logo"><hr>
+    </div>
+    <div class="navbar">
+        <a href="http://127.0.0.1:3000/FInal project/Homepage.html">Home</a>
+        <a href="http://127.0.0.1:3000/FInal%20project/Menu.html">Menu</a>
+        <a href="http://127.0.0.1:3000/FInal project/booking.html">Booking</a>
+        <a href="http://127.0.0.1:3000/FInal project/About Us.html">About Us</a>
+        <a href="http://127.0.0.1:3000/FInal project/Feedback.html">Feedback</a>
+    </div><hr>
+
+    <!-- Food Slogan Section -->
+    <div class="slogan">
+        <p>"Savor the flavor, every bite a delight!"</p>
+    </div>
+
+    <!-- Combo Sections -->
+    <div class="combo-section">
+        <div class="combo-item">
+            <img src="./spicy-pasta-spaghetti-with-sausage.jpg" alt="Ultimate Feast Combo">
+            <a href="http://127.0.0.1:3000/FInal project/combo1.html">
+                <h3>Italian Pasta</h3>
+            </a>
+            <p>Cafe special italian style red sauce pasta.</p>
+        </div>
+
+        <div class="combo-item">
+            <img src="./classic-burger-with-french-fries-beer.jpg" alt="Breakfast Special Combo">
+            <a href="http://127.0.0.1:3000/FInal project/combo2.html">
+                <h3>Chilled beer with...!!</h3>
+            </a>
+            <p>Burger, Salted fries and chilled beer.</p>
+        </div>
+
+        <div class="combo-item">
+            <img src="./top-view-mexican-nachos-tortilla-chips-plate-with-mexican-tacos-cutting-board.jpg" alt="Veggie Lovers Combo">
+            <a href="http://127.0.0.1:3000/FInal project/combo3.html">
+                <h3>Nachos exclusive</h3>
+            </a>
+            <p>A delicious mix of Nachos and veggie wrap.</p>
+        </div>
+
+        <!-- New Combo 4 -->
+        <div class="combo-item">
+            <img src="./bottom-half-view-caesar-salad-oval-plate-dark-red-table.jpg" alt="Diet King">
+            <a href="http://127.0.0.1:3000/FInal project/combo4.html">
+                <h3>Diet King</h3>
+            </a>
+            <p>salad with perfectly cooked panner and chicken.</p>
+        </div>
+
+        <!-- New Combo 5 -->
+        <div class="combo-item">
+            <img src="./fresh-homemade-pumpkin-bread-pumpkin-slices-olives.jpg" alt="Stuff bread">
+            <a href="http://127.0.0.1:3000/FInal project/combo5.html">
+                <h3>Pampkin Special</h3>
+            </a>
+            <p>Pumpkin mix with handmade stuff bread.</p>
+        </div>
+    </div>
+    <footer>
+        <p class="copyright">&copy; 2025 Outhouse Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

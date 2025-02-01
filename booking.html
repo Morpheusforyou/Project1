@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outhouse Cafe - Booking</title>
+    <style>
+        /* Prevent horizontal scrolling */
+        body {
+            background-color: rgb(18, 78, 77);
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .title {
+            text-align: center;
+            background-color: rgb(18, 78, 77);
+            padding: 10px 0; 
+            margin: 0; 
+            width: 100vw; /* Ensures it spans the whole width */
+        }
+        
+        .top-logo { 
+            padding: 5px; 
+            height: 30vh; /* Adjust the height of the logo */
+            max-width: 100%; /* Ensure the logo is responsive */
+            object-fit: contain; /* Ensure the logo keeps its aspect ratio */
+        }
+
+        .navbar {
+            display: flex;
+            text-align: center;
+            padding: 10px 10px;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .navbar a {
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(29, 90, 75);
+            border-radius: 20px;
+        }
+
+        /* Booking page styling */
+        .booking-container {
+            background-color: rgb(207, 207, 207);
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin: 50px auto;
+        }
+
+        .booking-container h2 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 0px solid rgb(18, 78, 77); /* Ensure border is set */
+            background-color: rgb(255, 255, 255);
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3); /* Black shadow effect */
+        }   
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .btn-submit {
+            background-color: rgb(18, 78, 77);
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-submit:hover {
+            background-color: rgb(29, 90, 75);
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(18, 78, 77);
+            padding: 20px 0;
+            color: white;
+        }
+
+        .copyright {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <img src="./12130774d53c4e5090f0bb9afd2a5552-free.png" class="top-logo"><hr>
+    </div>
+    <div class="navbar">
+        <a href="http://127.0.0.1:3000/FInal project/Homepage.html">Home</a>
+        <a href="http://127.0.0.1:3000/FInal%20project/Menu.html">Menu</a>
+        <a href="http://127.0.0.1:3000/FInal project/booking.html">Booking</a>
+        <a href="http://127.0.0.1:3000/FInal project/About Us.html">About Us</a>
+        <a href="http://127.0.0.1:3000/FInal project/Feedback.html">Feedback</a>
+    </div><hr>
+
+    <!-- Booking Form -->
+    <div class="booking-container">
+        <h2>Book a Table</h2>
+        <form action="#" method="POST">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <!-- Number of People -->
+            <div class="form-group">
+                <label for="people">Number of People</label>
+                <select id="people" name="people" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <!-- Time -->
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <!-- Special Requests -->
+            <div class="form-group">
+                <label for="requests">Special Requests (Optional)</label>
+                <textarea id="requests" name="requests" rows="4" placeholder="Any special requests?"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Confirm Booking</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; 2025 Outhouse Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
